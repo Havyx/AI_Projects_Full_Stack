@@ -1,2 +1,2 @@
-# AI_Projects_DataVis
-Projetos de IA com Vizualização de Dados
+# IA_Projetos_DataVis
+Projetos de visualização de dados por aplicações (e.g. flask, django, streamlit) web (Deploy)
