@@ -769,7 +769,14 @@
                             </tbody>
                           </table>
                         </div>
-                        <div {% comment %} id="world-map-gdp" {% endcomment %} class="col-md-8 col-sm-12 " style="height:230px;"> TESTE</div>
+                        <div {% comment %} id="world-map-gdp" {% endcomment %} class="col-md-8 col-sm-12 " style="height:230px">
+                        {% comment %} {% autoescape off %}
+                        {{ plot_div }}
+                        {% endautoescape %} {% endcomment %}
+                        {% load plotly_dash %}
+
+{% plotly_app name="SimpleExample" %}
+                        </div>
                       </div>
                     </div>
                   </div>
