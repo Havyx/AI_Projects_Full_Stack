@@ -55,7 +55,7 @@ def create_model():
     print(type(df))
     reg = pickle.load(open('static/model.pkl','rb'))
     data = df.copy()
-    preprocessed_data = df.copy()
+    preprocessed_data = pd.DataFrame()
     if (data is not None):
         preprocessed_data['Probabilidade'] = 0
         preprocessed_data['Predito'] = 0
