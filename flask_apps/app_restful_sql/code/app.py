@@ -1,6 +1,7 @@
 from flask import Flask, request
 from flask_restful import Resource, Api, reqparse
 from flask_jwt import JWT, jwt_required
+from user import UserRegister
 
 from security import authenticate, identity
 
@@ -21,7 +22,7 @@ class Item(Resource):
     @jwt_required()
     def get(self, name):
         item = next(filter(lambda x: x['name'] == name, items), None)
-        return {'item': item}, 200 if item is not None else 404
+        return {'item': item}, 200
 
     def post(self, name):
 
@@ -53,7 +54,6 @@ class Item(Resource):
         return item
 
 
-
 class ItemList(Resource):
 
     def get(self):
@@ -62,5 +62,6 @@ class ItemList(Resource):
 
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
+api.add_resource(UserRegister, '/register')
 
 app.run(port=3000, debug=True)
