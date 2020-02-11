@@ -7,21 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css">
-  <script type="text/javascript">
-    function httpGetAsync(theUrl, callback) {
-      var xmlHttp = new XMLHttpRequest();
-      xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-          callback(xmlHttp.responseText);
-      };
-      xmlHttp.open("GET", theUrl, true); // true for asynchronous
-      xmlHttp.send(null);
-    }
-
-    httpGetAsync("http://127.0.0.1:3000/store", function(response) {
-      alert(response);
-    });
-  </script>
+  
   <!-- Load plotly.js into the DOM -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <style>/* CORE STYLES */
@@ -29,12 +15,10 @@
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
-  
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
-  border-radius: 5px;
   width: 100px;
   margin: 10px;
   text-align: center;
@@ -76,7 +60,7 @@
     
     .showcase:before {
       content: '';
-      background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+      background: url('https://previews.123rf.com/images/nirut123rf/nirut123rf1706/nirut123rf170600076/79986375-industry-4-0-concept-smart-factory-with-icon-flow-automation-and-data-exchange-in-manufacturing-tech.jpg') no-repeat center center/cover;
       position: absolute;
       top: 0;
       left: 0;
@@ -111,6 +95,7 @@
       margin-top: 1rem;
       transition: opacity 1s ease-in-out;
       text-decoration: none;
+      border-radius: 5px;
     }
     
     .btn:hover {
@@ -144,7 +129,7 @@
       width: 60px;
       height: 60px;
       padding: 1rem;
-      background: var(--primary-color);
+      /*background: var(--primary-color);*/
       display: flex;
       align-items: center;
       justify-content: center;
@@ -281,7 +266,7 @@
   <header class="showcase">
     <div class="container showcase-inner">
       <div id="myElement">
-        <h1>API - Modelo de Machine Learning</h1>
+        <h1>HUB IA SENAI - API - Modelo de Machine Learning</h1>
         <br />
         <p>
           Aceita um dataframe como post JSON atraves de /model e retorna um json
@@ -290,8 +275,7 @@
       </div>
 
       <div class="flex-container">
-      <div id="tester" style="height:250px;"></div>
-      <div id="tester1" style="height:250px;"></div>
+
     </div>
       <a href="#" class="btn">Read More</a>
     </div>

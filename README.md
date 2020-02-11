@@ -6,3 +6,4 @@ https://towardsdatascience.com/deploying-your-first-deep-learning-model-mnist-in
   
   https://codepen.io/  
   https://codemyui.com/ink-blot-modal-using-video-blend-modes/  
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
