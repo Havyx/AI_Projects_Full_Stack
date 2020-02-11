@@ -26,6 +26,11 @@ def home():
 
 # somente acessivel por um post request.
 # POST /store data: {name:}
+@app.route('/teste')
+def teste():
+    return render_template('teste.html')
+
+
 @app.route('/store', methods=['POST'])  # '/' is homepage da aplicação.
 def create_store():
     # get_json converte json para um pyton dictionaty

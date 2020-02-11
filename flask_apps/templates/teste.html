@@ -7,21 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css">
-  <script type="text/javascript">
-    function httpGetAsync(theUrl, callback) {
-      var xmlHttp = new XMLHttpRequest();
-      xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-          callback(xmlHttp.responseText);
-      };
-      xmlHttp.open("GET", theUrl, true); // true for asynchronous
-      xmlHttp.send(null);
-    }
-
-    httpGetAsync("http://127.0.0.1:3000/store", function(response) {
-      alert(response);
-    });
-  </script>
+  
   <!-- Load plotly.js into the DOM -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <style>/* CORE STYLES */
@@ -29,12 +15,10 @@
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
-  
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
-  border-radius: 5px;
   width: 100px;
   margin: 10px;
   text-align: center;
@@ -290,8 +274,7 @@
       </div>
 
       <div class="flex-container">
-      <div id="tester" style="height:250px;"></div>
-      <div id="tester1" style="height:250px;"></div>
+
     </div>
       <a href="#" class="btn">Read More</a>
     </div>
