@@ -59,7 +59,7 @@ def create_model():
     if (data is not None):
         preprocessed_data['Probabilidade'] = 0
         preprocessed_data['Predito'] = 0
-        preprocessed_data['Probabilidade'] = reg.predict_proba(data)[:,1]
+        preprocessed_data['Probabilidade'] = reg.predict_proba(data)
         preprocessed_data['Predito'] = reg.predict(data)
     #model.load_new_data(df)
     #model.predicted_probability()[:,1]
@@ -68,4 +68,4 @@ def create_model():
     df_to_dict_data = preprocessed_data.to_dict(orient='list')
     return jsonify(df_to_dict_data)
 
-app.run(port=3000)
+app.run(port=5000)

@@ -1,0 +1,101 @@
+;idade;sexo;curso;financiador;semestre;horas_online;entrega_de_trabalhos;participacao_em_foruns;quantidade_de_consultas;status;media_de_notas;historico_de_reprovacao;turno_do_curso;portadores_necessidades_especiais
+7329;32;F;Técnico De Equipamentos Biomédicos;aluno;2;3.5043257627701263;5;3;51;ativo;1.064697655869803;2;manha;0
+6089;38;M;Técnico Em Alimentos;empresa;4;3.5043257627701263;2;1;7;trancado;5.688644853840799;2;manha;0
+4636;23;M;Técnico De Química;aluno;3;5.599832581601552;2;13;33;ativo;1.7853876095641108;3;tarde;0
+4244;37;M;Técnico De Rede De Computadores;aluno;2;4.473381186212658;1;6;96;desistente;5.688644853840799;4;tarde;1
+9542;17;F;Técnico De Segurança Do Trabalho;familia;2;4.126049118318169;3;5;38;ativo;5.688644853840799;4;tarde;0
+7823;25;F;Técnico De Vestuário;familia;4;4.016255027008387;1;4;33;ativo;0.7977996554498079;3;noite;0
+1597;45;M;Técnico Em Administração;empresa;3;3.9609565871209145;2;1;18;desistente;5.10395067113575;1;manha;0
+6518;23;M;Técnico De Equipamentos Biomédicos;familia;4;0.4102998990941358;3;16;53;ativo;9.153701070629213;2;manha;1
+2644;18;M;Técnico De Rede De Computadores;empresa;4;1.3810884448240364;0;2;34;ativo;0.7977996554498079;1;manha;0
+4411;28;F;Técnico Em Administração;familia;2;3.5043257627701263;3;1;31;trancado;9.153701070629213;5;manha;0
+3678;45;M;Técnico De Segurança Do Trabalho;empresa;1;5.0505777600359085;0;11;40;ativo;9.153701070629213;5;tarde;0
+8375;27;F;Técnico De Segurança Do Trabalho;familia;1;5.881044149296274;0;9;67;desistente;5.688644853840799;5;tarde;0
+9787;28;F;Técnico De Segurança Do Trabalho;empresa;1;3.0973613245916254;5;11;43;desistente;5.10395067113575;4;noite;0
+3094;32;M;Técnico De Calçados;aluno;1;4.937865662683807;5;4;84;desistente;0.7977996554498079;2;tarde;0
+9999;37;F;Técnico Em Alimentos;empresa;3;5.881044149296274;2;12;53;trancado;1.7853876095641108;2;tarde;1
+3258;49;M;Técnico Têxtil;aluno;1;4.473381186212658;4;16;90;trancado;2.6522391131596446;2;noite;0
+8962;18;F;Técnico De Calçados;familia;2;4.126049118318169;5;11;7;ativo;8.088467671426752;4;manha;1
+7036;19;F;Técnico De Informática;empresa;2;4.937865662683807;3;3;87;desistente;9.033016188449512;2;tarde;0
+6651;22;F;Técnico De Segurança Do Trabalho;familia;4;0.7626749848963235;1;11;25;ativo;9.033016188449512;5;manha;0
+6983;20;F;Técnico Têxtil;familia;2;5.599832581601552;0;15;75;ativo;9.153701070629213;1;noite;0
+9502;17;M;Técnico Em Alimentos;familia;2;4.126049118318169;5;1;79;trancado;2.6522391131596446;1;tarde;0
+4983;47;M;Técnico De Equipamentos Biomédicos;familia;4;4.236297223438842;3;9;55;ativo;5.688644853840799;1;manha;0
+4381;43;F;Técnico De Química;familia;1;4.126049118318169;0;13;9;ativo;1.7853876095641108;5;tarde;1
+5405;46;M;Técnico De Segurança Do Trabalho;empresa;2;5.0505777600359085;2;7;52;desistente;9.033016188449512;2;manha;1
+5846;26;M;Técnico De Segurança Do Trabalho;familia;1;3.0973613245916254;0;6;67;trancado;1.7853876095641108;5;tarde;1
+8059;32;F;Técnico Têxtil;aluno;2;1.8751853572382469;0;2;61;trancado;5.10395067113575;1;tarde;1
+4965;44;F;Técnico Em Alimentos;empresa;3;3.0973613245916254;4;2;32;trancado;0.7977996554498079;4;manha;1
+2888;42;F;Técnico De Equipamentos Biomédicos;aluno;4;5.599832581601552;1;7;92;trancado;0.7977996554498079;4;manha;1
+5851;32;M;Técnico De Segurança Do Trabalho;aluno;4;1.8751853572382469;4;7;32;ativo;1.064697655869803;4;noite;1
+2951;49;F;Técnico De Rede De Computadores;empresa;2;1.8751853572382469;3;12;62;desistente;2.6522391131596446;2;tarde;1
+7874;39;F;Técnico De Informática;empresa;4;3.5043257627701263;4;11;65;trancado;1.7853876095641108;3;noite;0
+7650;46;F;Técnico De Informática;familia;2;1.9453767044697334;2;19;32;desistente;1.7853876095641108;4;manha;0
+8151;39;F;Técnico De Equipamentos Biomédicos;aluno;2;2.1183620259055895;5;17;9;desistente;1.064697655869803;1;manha;0
+1987;23;F;Técnico De Química;aluno;3;5.881044149296274;4;18;97;trancado;5.688644853840799;4;manha;1
+4219;36;M;Técnico De Calçados;familia;2;3.9609565871209145;4;2;16;trancado;7.192236698764861;1;manha;1
+2347;24;M;Técnico De Calçados;empresa;4;3.352410848888835;0;8;64;desistente;5.10395067113575;4;noite;1
+5351;37;F;Técnico De Química;aluno;3;4.129830854208565;4;15;77;ativo;5.10395067113575;4;noite;1
+3950;39;F;Técnico De Informática;familia;3;4.473381186212658;1;11;81;ativo;9.033016188449512;2;manha;1
+2348;17;F;Técnico Têxtil;empresa;3;4.129830854208565;4;6;9;trancado;1.7853876095641108;3;tarde;1
+9405;18;F;Técnico De Calçados;aluno;4;4.937865662683807;2;10;97;trancado;8.088467671426752;1;manha;1
+3494;34;F;Técnico De Equipamentos Biomédicos;familia;1;3.9609565871209145;0;17;19;trancado;1.7853876095641108;2;noite;0
+6786;21;F;Técnico De Rede De Computadores;empresa;2;1.8751853572382469;2;11;60;trancado;2.6522391131596446;2;manha;0
+4232;19;F;Técnico De Calçados;familia;3;4.473381186212658;1;6;67;desistente;9.153701070629213;4;tarde;1
+1072;40;M;Técnico Têxtil;empresa;2;3.0973613245916254;0;7;82;desistente;2.6522391131596446;3;tarde;1
+9465;35;M;Técnico Em Administração;empresa;1;1.3810884448240364;4;12;30;desistente;9.153701070629213;3;manha;0
+7197;33;M;Técnico De Manutenção Automotiva;aluno;2;3.352410848888835;2;17;75;desistente;5.688644853840799;1;tarde;1
+9093;19;F;Técnico Em Alimentos;familia;2;3.0973613245916254;0;16;28;ativo;0.7977996554498079;1;noite;0
+7001;23;M;Técnico Têxtil;empresa;3;3.0973613245916254;2;6;4;desistente;0.7977996554498079;2;manha;0
+4211;20;F;Técnico De Segurança Do Trabalho;empresa;3;3.352410848888835;4;0;73;trancado;8.088467671426752;2;manha;0
+9973;33;M;Técnico De Informática;empresa;1;3.5043257627701263;5;0;16;ativo;1.064697655869803;4;noite;1
+9827;23;M;Técnico De Segurança Do Trabalho;aluno;3;4.937865662683807;3;3;49;desistente;5.688644853840799;1;tarde;0
+5382;19;M;Técnico Têxtil;empresa;1;1.9453767044697334;0;5;30;trancado;8.088467671426752;3;manha;1
+9020;37;F;Técnico Em Alimentos;familia;3;2.1183620259055895;4;2;53;trancado;2.6522391131596446;2;manha;1
+5077;26;M;Técnico Em Alimentos;empresa;3;4.016255027008387;0;15;68;desistente;2.6522391131596446;1;manha;1
+9795;42;M;Técnico De Informática;familia;3;0.4102998990941358;4;11;72;trancado;5.10395067113575;5;manha;0
+9010;25;F;Técnico De Segurança Do Trabalho;familia;2;3.352410848888835;4;3;56;ativo;9.153701070629213;4;manha;0
+6577;22;F;Técnico De Rede De Computadores;empresa;1;3.0450772190446815;0;17;73;trancado;7.192236698764861;1;manha;0
+2947;32;M;Técnico De Segurança Do Trabalho;empresa;3;4.473381186212658;0;6;27;ativo;9.153701070629213;3;tarde;0
+1176;28;F;Técnico De Calçados;empresa;4;3.0450772190446815;4;17;30;trancado;1.064697655869803;3;manha;0
+1305;23;F;Técnico Em Alimentos;familia;2;5.599832581601552;4;7;14;desistente;0.7977996554498079;4;manha;0
+3561;23;M;Técnico Em Alimentos;familia;1;1.8751853572382469;1;11;32;desistente;8.088467671426752;3;noite;1
+8304;35;M;Técnico De Rede De Computadores;empresa;2;4.016255027008387;5;5;33;trancado;1.7853876095641108;5;tarde;1
+1327;43;F;Técnico Em Administração;aluno;1;4.473381186212658;1;14;6;desistente;1.7853876095641108;3;manha;1
+5790;18;M;Técnico Têxtil;aluno;3;4.126049118318169;4;16;47;trancado;0.7977996554498079;4;noite;0
+4692;42;F;Técnico De Rede De Computadores;aluno;1;0.6346553375925756;2;16;59;desistente;7.192236698764861;4;manha;0
+2031;34;M;Técnico Têxtil;empresa;2;2.1183620259055895;4;19;60;ativo;0.7977996554498079;3;noite;0
+7822;36;F;Técnico De Manutenção Automotiva;familia;3;2.4977325156708425;5;1;84;ativo;9.033016188449512;1;tarde;1
+6296;43;M;Técnico De Informática;empresa;1;4.937865662683807;1;15;61;desistente;0.7977996554498079;1;noite;0
+9266;22;F;Técnico Em Administração;empresa;4;5.0505777600359085;0;11;49;ativo;9.033016188449512;1;tarde;0
+3940;45;M;Técnico De Rede De Computadores;aluno;4;1.8751853572382469;4;0;58;desistente;7.192236698764861;2;tarde;0
+8995;37;M;Técnico De Equipamentos Biomédicos;aluno;2;4.473381186212658;0;0;95;desistente;2.6522391131596446;5;noite;0
+5775;22;F;Técnico Têxtil;empresa;4;3.0973613245916254;2;19;73;desistente;0.7977996554498079;4;noite;0
+4133;32;M;Técnico De Manutenção Automotiva;familia;3;0.4102998990941358;2;11;72;ativo;5.10395067113575;5;manha;0
+4718;45;F;Técnico De Rede De Computadores;aluno;3;3.5043257627701263;2;6;94;trancado;5.688644853840799;5;noite;1
+1949;46;M;Técnico De Química;familia;4;2.1183620259055895;1;19;52;trancado;5.10395067113575;1;tarde;1
+6164;29;F;Técnico De Rede De Computadores;aluno;2;2.4977325156708425;5;10;28;ativo;5.688644853840799;3;noite;1
+5462;39;M;Técnico De Rede De Computadores;empresa;1;3.9609565871209145;2;13;75;ativo;7.192236698764861;4;manha;1
+9590;22;M;Técnico De Manutenção Automotiva;familia;1;1.8751853572382469;5;3;52;trancado;5.688644853840799;2;noite;0
+5427;20;M;Técnico De Informática;empresa;4;1.8751853572382469;0;18;99;desistente;7.192236698764861;1;manha;1
+1830;30;M;Técnico De Rede De Computadores;aluno;1;1.8751853572382469;4;15;93;trancado;5.10395067113575;2;tarde;0
+9277;44;F;Técnico Em Alimentos;familia;1;4.016255027008387;0;7;61;trancado;1.064697655869803;4;manha;1
+9602;23;F;Técnico De Vestuário;familia;4;2.9578773887904792;4;1;56;desistente;0.7977996554498079;3;noite;1
+3986;28;M;Técnico De Informática;empresa;2;2.9578773887904792;4;18;87;trancado;9.153701070629213;4;manha;1
+1157;26;M;Técnico De Equipamentos Biomédicos;empresa;2;4.129830854208565;3;10;86;ativo;0.7977996554498079;5;manha;0
+1293;49;M;Técnico De Segurança Do Trabalho;familia;4;2.1183620259055895;0;18;99;desistente;9.033016188449512;4;noite;1
+8641;39;M;Técnico Em Administração;aluno;1;4.473381186212658;3;2;42;trancado;1.7853876095641108;4;noite;0
+5689;27;M;Técnico De Equipamentos Biomédicos;familia;3;4.473381186212658;0;10;5;desistente;0.7977996554498079;4;manha;1
+4952;49;M;Técnico De Equipamentos Biomédicos;familia;4;4.016255027008387;3;0;21;trancado;2.6522391131596446;5;noite;1
+9191;19;F;Técnico De Segurança Do Trabalho;empresa;2;4.129830854208565;0;14;12;trancado;5.688644853840799;1;manha;0
+1566;16;M;Técnico De Rede De Computadores;familia;3;4.126049118318169;1;5;66;ativo;9.153701070629213;1;noite;1
+8613;38;M;Técnico Têxtil;empresa;3;1.8751853572382469;2;13;5;ativo;5.10395067113575;4;tarde;0
+9133;26;F;Técnico De Equipamentos Biomédicos;empresa;1;2.1183620259055895;5;5;82;trancado;7.192236698764861;1;tarde;1
+6475;45;F;Técnico De Manutenção Automotiva;familia;4;2.1183620259055895;4;12;65;ativo;7.192236698764861;2;tarde;0
+2646;26;F;Técnico De Vestuário;aluno;3;3.352410848888835;0;15;20;desistente;1.7853876095641108;3;tarde;0
+5240;17;M;Técnico De Vestuário;aluno;1;5.599832581601552;2;3;7;trancado;5.10395067113575;4;noite;1
+1670;35;M;Técnico De Química;empresa;2;4.126049118318169;2;8;95;desistente;2.6522391131596446;3;tarde;1
+6113;28;M;Técnico De Química;aluno;2;2.4977325156708425;5;15;95;ativo;1.7853876095641108;4;manha;1
+1063;34;M;Técnico De Informática;familia;3;3.0973613245916254;4;12;42;trancado;5.10395067113575;4;noite;0
+3972;22;M;Técnico Em Alimentos;aluno;4;3.352410848888835;0;14;92;desistente;1.7853876095641108;4;manha;1
+3494;27;M;Técnico De Equipamentos Biomédicos;aluno;2;2.9578773887904792;3;14;55;trancado;1.7853876095641108;3;noite;1
