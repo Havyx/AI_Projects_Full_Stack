@@ -12,6 +12,9 @@
         .catch (() => {});
     const sendloop = setInterval (send, 240);
   });
+  socket.onmessage = e => {
+    console.log (JSON.parse (e.data));
+  };
   if (navigator.getUserMedia) {
     navigator.getUserMedia (
       {audio: false, video: {width: 1280, height: 720}},
