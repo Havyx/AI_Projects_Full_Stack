@@ -82,7 +82,7 @@ async def time(websocket, path):
         #maintain aspect ratio imutils.resize() is used.
         try:
             frame, flag = executeOpenCV(frame, flag)
-        except: print('Aproxime-se da camera')
+        except: print('Aproxime-se da camer')
         #cv2.imshow("Frame", frame)
         key = cv2.waitKey(1) & 0xFF
         if key == ord("q"):
