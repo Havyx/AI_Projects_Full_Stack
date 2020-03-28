@@ -10,11 +10,11 @@
         .takePhoto (options)
         .then (blob => socket.send (blob))
         .catch (() => {});
-    const sendloop = setInterval (send, 1000 / useFrameRate);
+    const sendloop = setInterval (send, 240);
   });
-  /* if (navigator.getUserMedia) {
+  if (navigator.getUserMedia) {
     navigator.getUserMedia (
-      {audio: true, video: {width: 1280, height: 720}},
+      {audio: false, video: {width: 1280, height: 720}},
       function (stream) {
         var video = document.querySelector ('video');
         video.srcObject = stream;
@@ -28,5 +28,5 @@
     );
   } else {
     console.log ('getUserMedia not supported');
-  } */
+  }
 }) ();

@@ -30,6 +30,8 @@ predict = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat") #it take
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eye"]
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eye"]
 
+
+
 def executeOpenCV(frame, flag):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) #.cvtColor():Converts BGR image into GRAY image.
     subjects = detect(gray, 0) #detects faces in the grayscale frame.
@@ -54,17 +56,16 @@ def executeOpenCV(frame, flag):
                                                                         #function draws the contour(s) and all the nested contours.
             #if ear < thresh:
             if (leftEAR < thresh) | (rightEAR < thresh):
-                flag += 1 #incrementing the blink frame counter.
-                #cv2.putText(frame, '{}'.format(flag), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
-                print('{}'.format(flag))
+                flag += 2 #incrementing the blink frame counter.
+                cv2.putText(frame, '{}'.format(flag), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
                 if flag >= frame_check:
-                    print('ALERTA')
                     #cv2.putText(image,text,org,fontFace,fontScale,color,thickness)
-                    #cv2.putText(frame, "   *************ACORDA!****************", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2) #to draw a text string.
-                    #cv2.putText(frame, "****************ACORDA!****************", (10,325), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+                    cv2.putText(frame, "   *************ACORDA!****************", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2) #to draw a text string.
+                    cv2.putText(frame, "****************ACORDA!****************", (10, 325), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
             else:
-                flag=0
-        #cv2.imshow("Frame", frame)
+                flag= 0
+
+            return frame, flag
 
 
 async def time(websocket, path):
@@ -79,13 +80,17 @@ async def time(websocket, path):
         # now do with your images whatever you want. I used image.show to check it, it was spamming my monitor
         frame = imutils.resize(np.array(Image.open(io.BytesIO(message))) , width=450) #resizing image to maximum of 450 pixels. cv2.resize() can also do the same but in order to
         #maintain aspect ratio imutils.resize() is used.
-        executeOpenCV(frame, flag)
-
+        try:
+            frame, flag = executeOpenCV(frame, flag)
+        except: print('Aproxime-se da camera')
+        #cv2.imshow("Frame", frame)
         key = cv2.waitKey(1) & 0xFF
         if key == ord("q"):
             #to cleanup the camera and close any open windows
             cv2.destroyAllWindows()
             break
+
+        cv2.imshow("Frame", frame)
         
 start_server = websockets.serve(time, "127.0.0.1", 3333)
 
