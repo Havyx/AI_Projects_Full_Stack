@@ -19,14 +19,14 @@ async def QSocket(websocket, path):
         message = await websocket.recv()
         frame = imutils.resize(np.array(Image.open(io.BytesIO(message))), width=450)
         try:
-            frame, flag = executeOpenCV(frame, flag)
+            frame = await executeOpenCV(frame, flag)
         except: print('Aproxime-se da camera')
         key = cv2.waitKey(1) & 0xFF
         if key == ord("q"):
             cv2.destroyAllWindows()
             break
-        greeting = {"olhos": flag}
-        await websocket.send(json.dumps(greeting))
+        #greeting = {"olhos": flag}
+        #await websocket.send(json.dumps(greeting))
         #cv2.imshow("Frame", frame)
         
 start_server = websockets.serve(QSocket, "127.0.0.1", 3333)
