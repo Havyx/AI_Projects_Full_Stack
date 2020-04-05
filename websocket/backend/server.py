@@ -1,41 +1,22 @@
+import base64
 import asyncio
 import websockets
-import io
-import sys
-import cv2
 import json, codecs
-import numpy as np
-import imutils
-from PIL import Image, ImageMode
-import base64
-
-
-from packages.face import executeOpenCV
-
+from packages.face import reconhecimentoFacial
 
 async def QSocket(websocket, path):
     flag=0
     while True:
         message = await websocket.recv()
-        #frame = imutils.resize(np.array(Image.open(io.BytesIO(message))), width=450)
-        #frame = cv2.resize(np.array(Image.open(io.BytesIO(message))), (360,240), interpolation = cv2.INTER_AREA)
-        frame = np.array(Image.open(io.BytesIO(message)))
-
         try:
-            frame = executeOpenCV(frame, flag)
-        except: print('Aproxime-se da camera')
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord("q"):
-            cv2.destroyAllWindows()
-            break
+            frame = reconhecimentoFacial(message, flag) #Linha5
+        except: 
+            print('Aproxime-se da camera')
         try:
-            #new_img = Image.fromarray(frame)
-            btframe = base64.b64encode(frame)
-            await websocket.send(btframe)
+            btframe = base64.b64encode(frame) #new_img = Image.fromarray(frame)
+            await websocket.send(btframe) #await websocket.send(json.dumps(frame))
         except:
-            print('Erro')
-        #await websocket.send(json.dumps(frame))
-        
+            print('Erro ao enviar bytes') 
         
 start_server = websockets.serve(QSocket, "127.0.0.1", 3333)
 asyncio.get_event_loop().run_until_complete(start_server)

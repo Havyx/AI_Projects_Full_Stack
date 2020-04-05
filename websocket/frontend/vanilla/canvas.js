@@ -17,7 +17,7 @@
     socket.binaryType = 'arraybuffer';
     console.log (e.data);
 
-    var iData = new ImageData (new Uint8ClampedArray (e.data), 640, 480);
+    var iData = new ImageData (new Uint8ClampedArray (e.data), 360, 270);
     var ctx = canvas.getContext ('2d');
     ctx.putImageData (iData, 0, 0);
     //FUNCIONOU___________________________________________________________
@@ -62,7 +62,7 @@
   };
   if (navigator.getUserMedia) {
     navigator.getUserMedia (
-      {audio: false, video: {width: 320, height: 240}},
+      {audio: false, video: {width: 360, height: 270}},
       function (stream) {
         var video = document.querySelector ('video');
         video.srcObject = stream;
