@@ -1,7 +1,7 @@
 from imutils import face_utils
-import cv2
 from scipy.spatial import distance as dist
 import time
+import cv2
 
 def extrai_coordenadas(shape):
     (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eye"]
