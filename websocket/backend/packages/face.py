@@ -37,20 +37,30 @@ def desenhaRetanguloTexto(face, frame):
 
 ###########################################################################################################################################
 
-def getFeatures(frame, shape, countFrames):
+def getFeatures(frame, shape, countFrames, flag):
+    limiar = 40
     rightEAR, frame = getRightEAR(shape, frame)
     leftEAR, frame = getLeftEAR(shape, frame)
+    if ((rightEAR + leftEAR)/2) > limiar:
+        flag += 1
+    else: 
+        flag -= 1
+    if flag == 0:
+        flag = 1
+    if flag == 50:
+        flag = 49
+    print('flag{}'.format(flag))
     faceVertical = getFaceVertical(shape)
     faceHorizontal = getFaceHorizontal(shape)
     IMAR = getIMAR(shape)
     countFrames +=1
-    data_dict = {'frame': countFrames ,'leftEAR': leftEAR, 'rightEAR': rightEAR, 'faceVertical': faceVertical, 'faceHorizontal': faceHorizontal, 'IMAR': IMAR}
+    data_dict = {'frame': countFrames , 'flag': flag, 'leftEAR': leftEAR, 'rightEAR': rightEAR, 'faceVertical': faceVertical, 'faceHorizontal': faceHorizontal, 'IMAR': IMAR}
     handleDB.atualiza(data_dict)#print(data_dict)
-    return frame, countFrames
+    return frame, countFrames, flag
 
 ##########################################################################################################################################
 
-def reconhecimentoFacial(message, countFrames):
+def reconhecimentoFacial(message, countFrames, flag):
     frame = np.array(Image.open(io.BytesIO(message)))
     frame = resize(frame, width=360)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -58,10 +68,10 @@ def reconhecimentoFacial(message, countFrames):
     for face in faces:
         shape = predict(gray, face) #determina as landmarks facias para a região do rosto.
         shape = face_utils.shape_to_np(shape) #converte as coordenadas das landmarks faciais (x, y) em NumPy array.
-        frame, countFrames = getFeatures(frame, shape, countFrames)
+        frame, countFrames, flag = getFeatures(frame, shape, countFrames, flag)
         frame = desenhaRetanguloTexto(face, frame)
         cv2.imshow("Frame", frame)
-        return frame, countFrames
+        return frame, countFrames, flag
 
 ##########################################################################################################################################
 

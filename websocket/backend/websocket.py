@@ -10,6 +10,7 @@ from packages.models.mongodb import HandleDB
 
 ####################################################################################################################################################################
 async def QSocket(websocket, path):
+    flag = 0
     countFrames = 0
     while True:
         new_message = await websocket.recv()
@@ -17,7 +18,7 @@ async def QSocket(websocket, path):
             message = new_message
             await asyncio.sleep(0.2)
             try:
-                frame, countFrames = reconhecimentoFacial(message, countFrames)
+                frame, countFrames, flag = reconhecimentoFacial(message, countFrames, flag)
             except: print('Aproxime-se da camera')
         try:
             btframe = base64.b64encode(frame) #new_img = Image.fromarray(frame)
@@ -38,7 +39,7 @@ async def MongoSocket(websocket, path):
         try:
             cursor = QE.filtro()
             for doc in cursor:
-                dados.insert(0, {'frame': doc['frame'], 'IMAR_value': doc['IMAR'], 'faceHorizontal_value': doc['faceHorizontal'], 'faceVertical_value': doc['faceVertical'], 'leftEAR_value': doc['leftEAR'], 'rightEAR_value': doc['rightEAR']})
+                dados.insert(0, {'frame': doc['frame'], 'flag': doc['flag'], 'IMAR_value': doc['IMAR'], 'faceHorizontal_value': doc['faceHorizontal'], 'faceVertical_value': doc['faceVertical'], 'leftEAR_value': doc['leftEAR'], 'rightEAR_value': doc['rightEAR']})
             await asyncio.sleep(2)
             dados_de_envio = dados
             print('Dados Enviados a cada 2 segundos')
