@@ -1,0 +1,8 @@
+dlib
+pymongo
+websockets
+pillow
+opencv-python
+imutils
+numpy
+scipy
